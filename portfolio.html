@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pujzan</title>
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            background-color: #840404;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-left: 190px;
+            margin-top: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.4rem;
+            margin-top: 10px;
+            margin-right: 100px;
+            padding: 0;
+            font-size: 1.6rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #16025a;
+            color: #fff;
+            border: 3px solid #000000;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background-color: #0d0d0d;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .hero img {
+            width: 500px;
+            height: 650px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .text-content {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .text-content h2, .text-content h3 {
+            margin: 12px;
+            margin-left: 50px;
+        }
+
+        .text-content h2 {
+            font-size: 3rem;
+        }
+
+        .text-content h3 {
+            font-size: 2.7rem;
+            color: #ff5e57;
+        }
+
+        .text-content p {
+            margin: 1rem 0;
+            line-height: 1.5;
+            margin-left: 51.3px;
+            font-size: 1.3rem;
+            text-align: justify;
+        }
+
+        .social-icons {
+            margin-top: 1.5rem;
+            margin-left: 50px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 2.2rem;
+            margin-right: 1rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff5e57;
+            transform: scale(1.2);
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            margin-left: 50px;
+            padding: 0.8rem 2.5rem;
+            color: #ff5e57;
+            background-color: transparent;
+            border: 2px solid #ff5e57;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff5e57;
+            color: #fff;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            text-align: center;
+            display: none; /* Hide sections initially */
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff5e57;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .skills-list, .experience-list, .education-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skills-list li, .experience-list li, .education-list li {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0d0d0d;
+            margin-top: 1rem;
+            font-size: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pujzan</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#education" onclick="showSection('education')">Education</a></li>
+                <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <img src="pujan.jpg" alt="Photo of Pujan">
+            <div class="text-content">
+                <h2>Hello, I'm <span>Pujan</span></h2>
+                <h3>Aspiring <span>UI/UX Designer</span></h3>
+                <p>Motivated and detail-oriented professional with a Bachelor’s Degree in Computer Engineering from Tribhuvan University. I'm eager to apply my technical skills and creativity to real-world projects that drive organizational success.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/PujZan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/pujzan.xrestha" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/pujan_shrestha__/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a creative and enthusiastic professional with a passion for UI/UX design and web development. With a solid foundation in computer engineering and a love for aesthetics, I thrive on solving complex problems with innovative solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>UI/UX Design</li>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Proficiency in HTML, CSS, and JavaScript</li>
+            <li>Experience with Figma and Adobe XD</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>Bachelor’s Degree in Computer Engineering - Tribhuvan University</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <ul class="experience-list">
+            <li>Internship at XYZ Company - Designed intuitive interfaces for web applications</li>
+            <li>Freelance Graphic Designer - Created logos and branding for local businesses</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaboration or inquiries:</p>
+        <p>Email: pujan@example.com</p>
+        <p>Phone: +977-9876543210</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pujan. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

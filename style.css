@@ -1,0 +1,157 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fefefe;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #800000;
+    height: 90px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-left: 10px;
+
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.hero-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 450px;
+    height: 600px;
+    border-radius: 50%;
+    border: 5px solid #800000;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h3 {
+    font-size: 1.8rem;
+    color: #ff4c4c;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1.5rem;
+    margin-left: 0px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff5e57;
+    transform: scale(1.9);
+}
+
+ul.Training {
+    list-style: none;
+    padding: 0;
+}
+
+ul.Training li {
+    margin-bottom: 30px; /* Space between the training items */
+    padding: 15px;
+    border: 1px solid #1a1a1a; /* Optional: Add a border around items */
+    border-radius: 5px;
+    background: #171717; /* Optional: Light background color for better visibility */
+}
+
+.hero{
+    font-size: 2rem;
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h2, .hero-text h3 {
+    margin: 12px;
+    margin-left: 50px;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+}
+
+.hero-text h3 {
+    font-size: 2.7rem;
+    color: #ff5e57;
+}
+
+.hero-text p {
+    margin: 1rem 0;
+    line-height: 1.5;
+    margin-left: 51.3px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0.1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 0.01rem;
+}
