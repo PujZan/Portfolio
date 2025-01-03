@@ -37,33 +37,50 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
-    margin-left: 10px;
-
+    font-size: 1.3rem; 
 }
 
-/* Hero Section */
+/*index*/
 .hero {
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
+    flex-direction: column;
 }
 
 .hero-container {
     display: flex;
-    max-width: 1200px;
-    gap: 2rem;
+    max-width: 1400px;
+    gap: 1rem;
     align-items: center;
+    line-height: 1px;
+    
+}
+
+.hero-container h2{
+    color: #d12222;
+    margin-bottom: 2.3rem;
+    font-size: 60px;
+}
+
+.hero-container p{
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0.25rem 0;
+
 }
 
 .hero-image img {
     width: 450px;
-    height: 600px;
+    height: 650px;
     border-radius: 50%;
-    border: 5px solid #800000;
+   
 }
 
+/* Hero Section- About Me */
 .hero-text {
     max-width: 600px;
 }
@@ -74,7 +91,7 @@ header nav ul li a {
 }
 
 .hero-text h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #ff4c4c;
     margin-bottom: 1rem;
 }
@@ -86,8 +103,8 @@ header nav ul li a {
 
 /* Social Icons */
 .social-icons {
-    margin-top: 1.5rem;
-    margin-left: 0px;
+    margin-top: -240px;
+    margin-left: 1000px;
 }
 
 .social-icons a {
@@ -100,7 +117,7 @@ header nav ul li a {
 
 .social-icons a:hover {
     color: #ff5e57;
-    transform: scale(1.9);
+    transform: scale(1.5);
 }
 
 ul.Training {
@@ -116,42 +133,11 @@ ul.Training li {
     background: #171717; /* Optional: Light background color for better visibility */
 }
 
-.hero{
-    font-size: 2rem;
-}
-
-.hero-text {
-    max-width: 600px;
-    text-align: left;
-}
-
-.hero-text h2, .hero-text h3 {
-    margin: 12px;
-    margin-left: 50px;
-}
-
-.hero-text h2 {
-    font-size: 3rem;
-}
-
-.hero-text h3 {
-    font-size: 2.7rem;
-    color: #ff5e57;
-}
-
-.hero-text p {
-    margin: 1rem 0;
-    line-height: 1.5;
-    margin-left: 51.3px;
-    font-size: 1.3rem;
-    text-align: justify;
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 0.1rem;
     color: #fff;
     font-size: 0.9rem;
-    margin-top: 0.01rem;
+    margin-top: 13.5rem;
 }
