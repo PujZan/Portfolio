@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #141411;
     color: #fefefe;
 }
 
@@ -59,18 +59,20 @@ header nav ul li a {
     
 }
 
-.hero-container h2{
+.heros h2{
     color: #d12222;
-    margin-bottom: 2.3rem;
+    margin-bottom: 3.5rem;
     font-size: 60px;
+    margin-left: 40px;
+
 }
 
-.hero-container p{
-    font-size: 2rem;
+.heros p{
+    font-size: 1.7rem;
     line-height: 1.5;
     text-align: center;
-    margin: 0.25rem 0;
-
+    margin: -20px 0px 20px 0;
+    margin-left: 45px;
 }
 
 .hero-image img {
@@ -85,26 +87,42 @@ header nav ul li a {
     max-width: 600px;
 }
 
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.hero-text h3 {
+    font-size: 3rem;
+    margin-left:740px ;
+    width:500px;
+    margin-top: -520px;;
 }
 
-.hero-text h3 {
-    font-size: 2rem;
+.hero-text h4 {
+    margin-left: 670px;
+    font-size: 3rem;
+    width:1000px;
     color: #ff4c4c;
-    margin-bottom: 1rem;
+    margin-top: -30px;
 }
 
 .hero-text p {
+    margin-left: 420px ;
+    text-align: justify;
+    font-size: 1.2rem;
+    width: 1000px;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-top: -25px;
+}
+
+.hero-images img {
+    width:250px;
+    height: 350px;
+    margin-top: 220px;
+    margin-left: 100px;
+    border-radius: 10%;
 }
 
 /* Social Icons */
 .social-icons {
-    margin-top: -240px;
-    margin-left: 1000px;
+    margin-top: -275px;
+    margin-left: 1045px;
 }
 
 .social-icons a {
@@ -133,11 +151,11 @@ ul.Training li {
     background: #171717; /* Optional: Light background color for better visibility */
 }
 
-/* Footer */
+/* Footer 
 footer {
     text-align: center;
     padding: 0.1rem;
     color: #fff;
     font-size: 0.9rem;
-    margin-top: 13.5rem;
+    margin-top: 16rem;
 }
