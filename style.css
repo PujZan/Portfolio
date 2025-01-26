@@ -1,9 +1,10 @@
 /* General Styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #141411;
-    color: #fefefe;
+    font-family: 'Times New Roman', Times, serif;
+    background:url('C:\\Users\\Acer\\Desktop\\POrtfolio\\e.jpg  ');
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -17,8 +18,8 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #800000;
-    height: 90px;
+    background-color: #6432c7;
+    height: 85px;
 }
 
 header h1 {
@@ -29,15 +30,17 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 0rem;
-    margin: 0rem;
-    display: flex;
+    margin: 0rem;   
+    display:flex;
     gap: 2rem;
+    margin-left: 70px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
+    margin: 10px;
 }
 
 /*index*/
@@ -60,7 +63,7 @@ header nav ul li a {
 }
 
 .heros h2{
-    color: #d12222;
+    color: #811cc9;
     margin-bottom: 3.5rem;
     font-size: 60px;
     margin-left: 40px;
@@ -76,10 +79,29 @@ header nav ul li a {
 }
 
 .hero-image img {
-    width: 450px;
-    height: 650px;
-    border-radius: 50%;
-   
+    margin-top: 60px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10%; 
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: -670px;
+    margin-left: 1000px;
+}
+
+.social-icons a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6031bc;
+    transform: scale(1.7);
 }
 
 /* Hero Section- About Me */
@@ -89,73 +111,137 @@ header nav ul li a {
 
 .hero-text h3 {
     font-size: 3rem;
-    margin-left:740px ;
-    width:500px;
-    margin-top: -520px;;
+    margin-left:820px ;
+    width:1000px;
+    margin-top: -600px;
+    color:#6031bc
 }
 
 .hero-text h4 {
-    margin-left: 670px;
+    margin-left: 720px;
     font-size: 3rem;
     width:1000px;
-    color: #ff4c4c;
+    color: #6031bc;
     margin-top: -30px;
 }
 
 .hero-text p {
-    margin-left: 420px ;
+    margin-left: 520px ;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 1000px;
     line-height: 1.6;
-    margin-top: -25px;
+    margin-top: -35px;
 }
 
 .hero-images img {
-    width:250px;
-    height: 350px;
-    margin-top: 220px;
+    width:350px;
+    height: 450px;
+    margin-top: 150px;
     margin-left: 100px;
     border-radius: 10%;
+    margin-bottom: 2rem;
 }
 
-/* Social Icons */
-.social-icons {
-    margin-top: -275px;
-    margin-left: 1045px;
+/*Skills*/
+.icon-pink { color: #e91e63; }
+.icon-grey { color: #607d8b; }
+.icon-orange { color: #f24e1e; }
+.icon-yellow { color: #ff9800; }
+.icon-blue { color: #3f51b5; }
+.icon-teal { color: #009688; }
+.icon-green { color: #4caf50; }
+.icon-python { color: #3776ab; }
+.icon-lightgreen { color: #8bc34a; }
+.icon-html { color: #e34f26; }
+.icon-css { color: #1572b6; }
+.icon-brown { color: #795548; }
+.icon-orange-dark { color: #ff5722; }
+
+ul.skills{
+    list-style: none;
 }
 
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.2rem;
-    margin-right: 1rem;
-    transition: transform 0.3s ease, color 0.3s ease;
+ul.skills li {
+    font-size: 23px;
+    padding: 12px;
 }
 
-.social-icons a:hover {
-    color: #ff5e57;
-    transform: scale(1.5);
+/*Experience*/
+ul.Experience {
+    list-style: none;
+    padding: 0;
 }
 
+ul.Experience h5,h6{
+    margin-top: 20px;
+    color: #6031bc;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+ul.Experience li {
+    margin-bottom: 30px; /* Space between the training items */
+    padding: 15px; 
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #1a1a1a; /* Optional: Add a border around items */
+    border-radius: 5px;
+    background: #e7e7e7; /* Optional: Light background color for better visibility */
+}
+
+/*Training*/
 ul.Training {
     list-style: none;
     padding: 0;
 }
 
+ul.Training h5,h6{
+    margin-top: 10px;
+    color: #6031bc;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    
+}
+
 ul.Training li {
     margin-bottom: 30px; /* Space between the training items */
     padding: 15px;
+    font-size: 18px;
+    text-align: center;
     border: 1px solid #1a1a1a; /* Optional: Add a border around items */
     border-radius: 5px;
-    background: #171717; /* Optional: Light background color for better visibility */
+    background: #e7e7e7; /* Optional: Light background color for better visibility */
 }
 
-/* Footer 
-footer {
-    text-align: center;
-    padding: 0.1rem;
-    color: #fff;
-    font-size: 0.9rem;
-    margin-top: 16rem;
+.contact {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 290px;
+    margin-left: 290px;
+    margin-top: 135px;
+    font-size: 20px;
 }
+
+.contact li {
+    margin-right: 100px; /* Adds spacing between items */
+}
+
+.icon-green {
+    color: green;
+    margin-right: 5px; /* Adds a little space between the icon and text */
+}
+
+.icon-blue {
+    color: blue;
+    margin-right: 5px;
+}
+
+.icon-red {
+    color: red;
+    margin-right: 5px;
+}
+
