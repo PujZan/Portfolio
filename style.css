@@ -167,6 +167,120 @@ ul.skills li {
     padding: 12px;
 }
 
+/* Project Section Styling */
+.project-folder {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+    padding: 0 10px;
+}
+
+.folder {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    max-width: 100%;
+    width: 450px;
+    height: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.folder:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.folder img {
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 90%;
+    height: 450px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.folder h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.folder h3 a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.folder h3 a:hover {
+    color: #6031bc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-folder {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+        max-width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .project-folder {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .folder {
+        width: 100%;
+        height: auto;
+    }
+
+    .folder img {
+        height: 250px;
+    }
+}
+.folder section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pro h1 {
+    margin-left: 30px;
+}
+.pro p {
+    margin-left: 30px;
+    width: 90%;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.pro a{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
 /*Experience*/
 ul.Experience {
     list-style: none;

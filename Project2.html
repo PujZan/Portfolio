@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Image Classification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lung Image Classification using Deep Learning using deep learning technique by federated learning</h1>
+    </header>
+    <section>
+        <div class="pro">
+            <p>This project leverages federated learning to implement a privacy-preserving, decentralized deep learning model for the multiclass classification of lung images.</p>
+            <p>Using ResNet-101 as the backbone, the model classifies medical images into categories such as COVID-19, pneumonia hernia, infiltration, cardiomegaly and other lung conditions having total of 15 different classes, while ensuring that sensitive medical data remains distributed across multiple devices or institutions.</p>
+            <p><strong>Objectives:</strong> The primary goal of this project is to develop a privacy-preserving and collaborative solution for lung condition detection using medical imaging. By utilizing federated learning, institutions can collaboratively train a robust model without sharing sensitive patient data, promoting data security and accessibility.</p>
+            <p><strong>Features: </strong>Federated Learning Framework: Enables decentralized training, where data stays on local devices, ensuring privacy.</p>
+            <p><strong> Federated Learning</strong> consists of a central server and many clients. Each client has its own dataset as a local dataset to train a shared global model iteratively. At each training iteration, each client trains the model with its local dataset and then sends the updated parameters to the server. The central server combines i.e. averages all the uploaded parameters from all the servers by algorithms such as Federated Averaging (FA) ,which simply takes average of the received parameters from different clients, and then sends the combined parameters back  to all the clients. To complete one iteration of training, a client will then update the local model with the received parameters</p>
+            <a href="https://github.com/PujZan/Multi-Class-Lung-Image-Classification-using-deep-learning-techniques-by-federated-learning-approach-" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+</body>
+</html>
